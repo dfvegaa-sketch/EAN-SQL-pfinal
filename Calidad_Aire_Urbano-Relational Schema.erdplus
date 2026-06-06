@@ -1,0 +1,506 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "4e12bc20-81f5-4af3-9328-d1ff38265fc0",
+        "type": "Table",
+        "position": {
+          "x": 650.2243306414708,
+          "y": -95.60835281120131
+        },
+        "data": {
+          "label": "ciudad",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "46135f2f-3532-4f05-97de-84cace715004",
+              "name": "ciudad_id",
+              "type": "Custom",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "4d04f64d-d4ec-473d-94dc-993971f2f687",
+              "name": "nombre",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "57bca313-2697-44aa-befe-6b4562df6694",
+              "name": "alitud_msnm",
+              "type": "INT",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "883a3868-ddad-4471-9183-8946ef725ff3",
+              "name": "poblacion",
+              "type": "INT",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "c680f87a-ec4c-4f3e-890f-be2b30ff3bf9",
+              "name": "departamento",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 151
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "d7d26183-71f4-46fe-9978-854945489d5a",
+        "type": "Table",
+        "position": {
+          "x": 343.550703298803,
+          "y": -21.12483029863182
+        },
+        "data": {
+          "label": "estaciones",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "ca0faf82-0ec6-4ce4-aae7-449886218a30",
+              "name": "estacion_id",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "d10d4745-bc04-4e05-9c58-d760a714ba4e",
+              "name": "nombre",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "091874ca-919f-4be0-8377-1e67487e6fea",
+              "name": "latitud",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "a809b50d-fd9b-4d4d-8820-fcaa88fe2f86",
+              "name": "longitud",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "f70aba35-d02f-4ea0-970c-cfe2fbf9a74b",
+              "name": "fecha_instalacion",
+              "type": "DATE",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "95ec4784-4e1e-4b9a-b7d6-d138208a6d32",
+              "name": "activa",
+              "type": "Custom",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "131be39a-3315-4e31-a437-3c118f517a82",
+              "name": "fk_CIUDAD",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "3f520a5b-bcd9-45f4-816d-e2b53f16e784",
+                "sourceTableId": "4e12bc20-81f5-4af3-9328-d1ff38265fc0",
+                "columns": [
+                  {
+                    "id": "fk_46135f2f-3532-4f05-97de-84cace715004",
+                    "name": "ciudad_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": false,
+              "isUnique": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 202
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "c3e18b5e-4f6a-49bd-af68-b96335f279c8",
+        "type": "Table",
+        "position": {
+          "x": 644.612800738991,
+          "y": 298.83903763522875
+        },
+        "data": {
+          "label": "contaminantes",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "f843f790-fbf5-4e8a-b39c-b3f9fcc0c016",
+              "name": "contaminante_id",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "04090b8b-a491-469a-b55e-d6f94490b0b3",
+              "name": "nombre",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "7447f895-3f21-4598-9ca4-57928068e477",
+              "name": "unidad",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "a0271590-84cb-4a89-a5bb-2f673d5a5dbc",
+              "name": "limite_legal_diario",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "132c72bf-f5a7-48f4-8466-1fde69e09d41",
+              "name": "descripcion",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 151
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "140f6721-7ad0-4abf-8e75-545e4b4f9cad",
+        "type": "Table",
+        "position": {
+          "x": 952.8018044339462,
+          "y": 25.935996305044938
+        },
+        "data": {
+          "label": "clima_diario",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "ce088930-5217-4676-9746-b570c6c7e349",
+              "name": "clima_id",
+              "type": "Custom",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "0636b10a-7375-4057-8fdd-c7780a90071e",
+              "name": "fecha",
+              "type": "DATE",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "03555e88-1012-475b-a7da-4790751f2aa2",
+              "name": "temperatura_c",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "65e03083-74ee-438f-9dc8-12dae7ea9486",
+              "name": "humedad_pct",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "fb93a4d5-208b-4c66-95f3-659b9f5b1ceb",
+              "name": "viento_kmh",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "5b8a0258-8956-4e73-b75c-34b52e209240",
+              "name": "lluvia",
+              "type": "Custom",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "9d577e39-e1f3-44f4-9ca7-c8832f9118d8",
+              "name": "mm_lluvia",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "1a06e5fd-98a2-414b-a1ea-798ac3b64119",
+              "name": "es_festivo",
+              "type": "Custom",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "fa8a05a5-0956-44c1-81a4-7e4f22c26e34",
+              "name": "fk_CIUDAD",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "c79fd79e-96c5-4376-95e6-eb8ec3a3297c",
+                "sourceTableId": "4e12bc20-81f5-4af3-9328-d1ff38265fc0",
+                "columns": [
+                  {
+                    "id": "fk_46135f2f-3532-4f05-97de-84cace715004",
+                    "name": "ciudad_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": false,
+              "isUnique": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 252
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "d62c6f8d-e610-46de-8808-221e7b4fa917",
+        "type": "Table",
+        "position": {
+          "x": 340.9277358677211,
+          "y": 320.73699561936724
+        },
+        "data": {
+          "label": "mediciones_raw",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "a4ce83d5-c000-4b70-b4cb-1d98b97d921d",
+              "name": "medicion_id",
+              "type": "Custom",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "600d46bc-bda6-42fc-b599-4fb4acb4e2a8",
+              "name": "valor",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "972da19c-9506-4570-958b-7a2c598757c2",
+              "name": "timestamp",
+              "type": "Custom",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "4fd2bd9d-23de-4ed5-8a10-625977287164",
+              "name": "fag_anomalia",
+              "type": "Custom",
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "313cbb43-48d3-4cae-b7c3-3dfedc695df8",
+              "name": "fk_CONTAMINANTES",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "2a87aeea-4a63-4bca-ba73-3b12ef11a8b9",
+                "sourceTableId": "c3e18b5e-4f6a-49bd-af68-b96335f279c8",
+                "columns": [
+                  {
+                    "id": "fk_f843f790-fbf5-4e8a-b39c-b3f9fcc0c016",
+                    "name": "contaminante_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "5fb33c2f-5886-4d20-88b1-ecb10a147dfa",
+              "name": "fk_ESTACIONES",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "eb02bfaa-7496-467a-92dc-0686f673c42d",
+                "sourceTableId": "d7d26183-71f4-46fe-9978-854945489d5a",
+                "columns": [
+                  {
+                    "id": "fk_ca0faf82-0ec6-4ce4-aae7-449886218a30",
+                    "name": "estacion_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": false,
+              "isUnique": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": true
+        },
+        "measured": {
+          "width": 240,
+          "height": 177
+        },
+        "selected": true,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "4e12bc20-81f5-4af3-9328-d1ff38265fc0->d7d26183-71f4-46fe-9978-854945489d5a_3f520a5b-bcd9-45f4-816d-e2b53f16e784",
+        "type": "Relational",
+        "source": "4e12bc20-81f5-4af3-9328-d1ff38265fc0",
+        "targetHandle": "foreign-key-handle-3f520a5b-bcd9-45f4-816d-e2b53f16e784",
+        "target": "d7d26183-71f4-46fe-9978-854945489d5a",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "3f520a5b-bcd9-45f4-816d-e2b53f16e784",
+            "sourceTableId": "4e12bc20-81f5-4af3-9328-d1ff38265fc0",
+            "columns": [
+              {
+                "id": "fk_46135f2f-3532-4f05-97de-84cace715004",
+                "name": "ciudad_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4e12bc20-81f5-4af3-9328-d1ff38265fc0->140f6721-7ad0-4abf-8e75-545e4b4f9cad_c79fd79e-96c5-4376-95e6-eb8ec3a3297c",
+        "type": "Relational",
+        "source": "4e12bc20-81f5-4af3-9328-d1ff38265fc0",
+        "targetHandle": "foreign-key-handle-c79fd79e-96c5-4376-95e6-eb8ec3a3297c",
+        "target": "140f6721-7ad0-4abf-8e75-545e4b4f9cad",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "c79fd79e-96c5-4376-95e6-eb8ec3a3297c",
+            "sourceTableId": "4e12bc20-81f5-4af3-9328-d1ff38265fc0",
+            "columns": [
+              {
+                "id": "fk_46135f2f-3532-4f05-97de-84cace715004",
+                "name": "ciudad_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "c3e18b5e-4f6a-49bd-af68-b96335f279c8->d62c6f8d-e610-46de-8808-221e7b4fa917_2a87aeea-4a63-4bca-ba73-3b12ef11a8b9",
+        "type": "Relational",
+        "source": "c3e18b5e-4f6a-49bd-af68-b96335f279c8",
+        "targetHandle": "foreign-key-handle-2a87aeea-4a63-4bca-ba73-3b12ef11a8b9",
+        "target": "d62c6f8d-e610-46de-8808-221e7b4fa917",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "2a87aeea-4a63-4bca-ba73-3b12ef11a8b9",
+            "sourceTableId": "c3e18b5e-4f6a-49bd-af68-b96335f279c8",
+            "columns": [
+              {
+                "id": "fk_f843f790-fbf5-4e8a-b39c-b3f9fcc0c016",
+                "name": "contaminante_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "d7d26183-71f4-46fe-9978-854945489d5a->d62c6f8d-e610-46de-8808-221e7b4fa917_eb02bfaa-7496-467a-92dc-0686f673c42d",
+        "type": "Relational",
+        "source": "d7d26183-71f4-46fe-9978-854945489d5a",
+        "targetHandle": "foreign-key-handle-eb02bfaa-7496-467a-92dc-0686f673c42d",
+        "target": "d62c6f8d-e610-46de-8808-221e7b4fa917",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "eb02bfaa-7496-467a-92dc-0686f673c42d",
+            "sourceTableId": "d7d26183-71f4-46fe-9978-854945489d5a",
+            "columns": [
+              {
+                "id": "fk_ca0faf82-0ec6-4ce4-aae7-449886218a30",
+                "name": "estacion_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 94.27341660959388,
+      "y": 231.54863975225305,
+      "zoom": 0.9525415578692543
+    }
+  },
+  "name": "Calidad_Aire_Urbano-Relational Schema",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 323917
+  },
+  "id": 469106,
+  "updatedAtTimestamp": 1779937539
+}

@@ -1,0 +1,6 @@
+contaminante_id,nombre,unidad,limite_legal_diario,descripcion
+1,PM2.5,µg/m³,25.0,Partículas finas < 2.5 µm
+2,PM10,µg/m³,50.0,Partículas gruesas < 10 µm
+3,NO2,µg/m³,40.0,Dióxido de nitrógeno
+4,O3,µg/m³,100.0,Ozono troposférico
+5,CO,mg/m³,10.0,Monóxido de carbono
